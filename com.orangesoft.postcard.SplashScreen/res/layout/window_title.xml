@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffa500" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" 
+        android:textStyle="bold"
+         android:id="@+id/title" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true" />
+    <ImageView android:id="@+id/titleimage"
+         android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/title" android:contentDescription="TODO"/>
+</RelativeLayout>

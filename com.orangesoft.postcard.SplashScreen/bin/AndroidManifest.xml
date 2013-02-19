@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" package="com.orangesoft.postcard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-sdk android:minSdkVersion="8"/>
+    
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:allowBackup="true">
+        <activity android:label="@string/title_activity_main" android:name="com.orangesoft.postcard.SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.orangesoft.postcard.TipActivity" android:screenOrientation="portrait" />
+        <activity android:name="InfoActivity" android:screenOrientation="portrait" />
+        <activity android:name="PicPickerActivity" android:screenOrientation="portrait" />
+        <activity android:name="CustomizeActivity" android:screenOrientation="portrait" />
+    </application>
+</manifest>

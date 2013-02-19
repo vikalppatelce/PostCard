@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/splashlogo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:layout_marginTop="100.0dip"
+         android:src="@drawable/logo" 
+         android:layout_centerHorizontal="true" 
+         android:contentDescription="@string/companylogo" />
+    
+    <ImageView android:id="@+id/splash"
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:layout_marginTop="20.0dip"
+         android:src="@drawable/sample" 
+         android:layout_below="@id/splashlogo"
+         android:layout_centerHorizontal="true"
+         android:contentDescription="@string/postcard" />
+    
+    <ProgressBar android:id="@+id/loading" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="30.0dip" 
+        android:layout_below="@id/splash" 
+        android:layout_centerHorizontal="true" 
+        style="@style/GenericProgressIndicator" />
+</RelativeLayout>
